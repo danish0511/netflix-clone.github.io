@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+}
+hr {
+  height: 8px;
+  background-color: rgb(35, 35, 35);
+  border: none;
+}
+.top-header {
+  height: 90vh;
+  background-image: url(images/background.jpg);
+}
+.container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.language-picker {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #535251;
+  padding: 10px 30px;
+  border-radius: 5px;
+  height: 38px;
+}
+.language,
+.drop-down {
+  position: absolute;
+  top: 5px;
+}
+.dropdown-container {
+  position: relative;
+}
+.navbar {
+  margin: 0px 180px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.right-half {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.language {
+  left: 4px;
+}
+.drop-down {
+  right: -3.2px;
+  top: 6.8px;
+  cursor: default;
+}
+.btn {
+  background-color: rgb(229, 8, 21);
+  padding: 8px 15px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.content {
+  margin: 25vh auto;
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content p {
+  margin-top: 25px;
+}
+.para-1 {
+  font-size: 45px;
+  font-weight: 900;
+}
+.para-2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.email-container {
+  display: flex;
+  gap: 20px;
+  width: 60%;
+  margin-top: 15px;
+  height: 55px;
+}
+.email-container input {
+  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #535251;
+  border-radius: 4px;
+  font-size: 15px;
+  padding-left: 15px;
+  color: white;
+}
+.get-started-btn {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.body-section {
+  display: flex;
+  align-items: center;
+  padding: 0 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.left-item {
+  width: 80%;
+}
+.left-item h1,
+.right-item h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.left-item p,
+.right-item p {
+  font-size: 23px;
+}
+.right-item {
+  position: relative;
+}
+.right-item video {
+  position: absolute;
+  top: 95px;
+  left: 78px;
+  z-index: -1;
+}
+.layout {
+  position: absolute;
+  bottom: 10%;
+  border: 2px solid #535251;
+  border-radius: 10px;
+  background-color: black;
+  padding: 10px 0 10px 10px;
+  left: 24%;
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+.layout p {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.layout p span {
+  color: blue;
+}
+.layout img {
+  width: 60px;
+}
+.static-left {
+  position: relative;
+}
+.custom-loader {
+  position: absolute;
+  right: 10%;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  border-radius: 50%;
+  /* -webkit-mask: radial-gradient(farthest-side, #0000 40%, #000 41%); */
+  background: linear-gradient(0deg, #766df480 50%, #766df4ff 0) center/4px 100%,
+    linear-gradient(90deg, #766df440 50%, #766df4bf 0) center/100% 4px;
+  background-repeat: no-repeat;
+  animation: s3 1s infinite steps(12);
+}
+.custom-loader::before,
+.custom-loader::after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.915;
+  transform: rotate(30deg);
+}
+.custom-loader::after {
+  opacity: 0.83;
+  transform: rotate(60deg);
+}
+@keyframes s3 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.faq-container {
+  padding: 40px 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq-container h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.faq {
+  background-color: #373737;
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  padding: 30px;
+  font-size: 25px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.faq:hover {
+  cursor: pointer;
+  background-color: #535251;
+}
+.membership {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.faq-container .email-container {
+  width: 40%;
+  margin-bottom: 30px;
+}
+.footer {
+  padding: 70px 170px;
+}
+.footer a {
+  color: white;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px 10px 10px 0;
+}
+.grid-item {
+  padding: 8px 8px 8px 0;
+  font-size: 13px;
+  text-align: left;
+}
+.language-selector{
+    margin-top: 30px;
+}
+.ending p{
+    margin-top: 20px;
+    font-size: 13px;
+}
